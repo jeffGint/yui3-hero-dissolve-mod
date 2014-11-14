@@ -1,28 +1,25 @@
 yui3-hero-dissolve-mod
 ======================
-
 this is a basic module that dissolves images using YUI3 event and transition modules
 
 
-mod usage
-=======
-
-include YUI3 base from cdn and the module js itself:
-the css is intentionally light- this should be styled to meet your needs
+##mod usage
+include YUI3 base from cdn and the module js itself.
+The css is intentionally light. It should be styled to meet your needs
+```
 <link href="yui-hero-dissolve.css" rel="stylesheet"  type="text/css" />
 <script src="http://yui.yahooapis.com/3.18.1/build/yui/yui-min.js"></script>
 <script src="yui-hero-dissolve-module.js"></script>
+```
 
-
-html requires only a UL with an id that matches the cfg:
-
+###html requires only a UL with an id that matches the cfg:
+```html
 <ul id='heroWidget'></ul>
+```
 
+###set the configuration options- below is a sample
 
-set the configuration options- below is a sample
-===============================
-
-<script>
+```javascript
   YUI().use('hero-dissolve', function (Y) {
      var cfg =  {
           id: "heroWidget",
@@ -50,5 +47,5 @@ set the configuration options- below is a sample
      Y.HeroDissolve.init(cfg);
 
    });
+```
 
-</script>
